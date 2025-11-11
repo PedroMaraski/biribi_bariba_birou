@@ -28,17 +28,17 @@ void csv_to_bin(const char* csv_file, const char* bin_file){
     }
 
     while(fgets(linha, MAX_LINE_LENGTH, f_csv) != NULL){
-        linha[strcspn(linha, "\n")] = 0;
-
-        char* token = strtok(linha, separador);
-
+        size_t len = strlen(linha);
+        fwrite(linha, sizeof(char), len, f_bin);
     }
 
+    fclose(f_csv);
+    fclose(f_bin);
 
 }
 
 int main(){
-    
+    csv_to_bin();
     return 0;
 }
 
