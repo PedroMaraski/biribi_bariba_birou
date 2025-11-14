@@ -1,0 +1,100 @@
+7;Aveia, flocos, crua;394;13.9;Cereais e derivados
+10;Biscoito, doce, recheado com morango;471;5,7;Cereais e derivados
+13;Biscoito, salgado, cream cracker;432;10.1;Cereais e derivados
+25;Cereal matinal, milho;365;7.2;Cereais e derivados
+35;Farinha, de trigo;360;9.8;Cereais e derivados
+40;Macarrão, trigo, cru;371;10.0;Cereais e derivados
+45;Milho, verde, enlatado, drenado;98;3.2;Cereais e derivados
+53;Pão, trigo, francês;300;8.0;Cereais e derivados
+61;Pipoca, com óleo de soja, sem sal;448;9.9;Cereais e derivados
+66;Abóbora, menina brasileira, crua;14;0.6;Verduras, hortaliças e derivados
+70;Abobrinha, italiana, cozida;15;1.1;Verduras, hortaliças e derivados
+75;Agrião, cru;17;2.7;Verduras, hortaliças e derivados
+82;Alho, cru;113;7.0;Verduras, hortaliças e derivados
+88;Batata, doce, cozida;77;0.6;Verduras, hortaliças e derivados
+93;Batata, inglesa, frita;267;5.0;Verduras, hortaliças e derivados
+98;Beterraba, crua;49;1.9;Verduras, hortaliças e derivados
+100;Brócolis, cozido;25;2.1;Verduras, hortaliças e derivados
+107;Cebola, crua;39;1.7;Verduras, hortaliças e derivados
+110;Cenoura, crua;34;1.3;Verduras, hortaliças e derivados
+115;Couve, manteiga, crua;27;2.9;Verduras, hortaliças e derivados
+121;Farinha, de mandioca, crua;361;1.6;Verduras, hortaliças e derivados
+129;Mandioca, cozida;125;0.6;Verduras, hortaliças e derivados
+134;Maxixe, cru;14;1.4;Verduras, hortaliças e derivados
+144;Pimentão, verde, cru;21;1.1;Verduras, hortaliças e derivados
+147;Quiabo, cru;30;1.9;Verduras, hortaliças e derivados
+157;Tomate, com semente, cru;15;1.1;Verduras, hortaliças e derivados
+163;Abacate, cru;96;1.2;Frutas e derivados
+168;Açaí, polpa, congelada;58;0.8;Frutas e derivados
+175;Banana, da terra, crua;128;1.4;Frutas e derivados
+182;Banana, prata, crua;98;1.3;Frutas e derivados
+186;Caju, cru;43;1.0;Frutas e derivados
+200;Goiaba, vermelha, com casca, crua;54;1.1;Frutas e derivados
+201;Graviola, crua;62;0,8;Frutas e derivados
+208;Laranja, baía, crua;45;1.0;Frutas e derivados
+214;Laranja, pêra, crua;37;1.0;Frutas e derivados
+226;Mamão, Papaia, cru;40;0.5;Frutas e derivados
+235;Melancia, crua;33;0.9;Frutas e derivados
+239;Morango, cru;30;0.9;Frutas e derivados
+253;Tucuma, cru;262;2.1;Frutas e derivados
+257;Uva, Rubi, crua;49;0.6;Frutas e derivados
+277;Atum, conserva em óleo;166;26.2;Pescados e frutos do mar
+282;Cação, posta, cozida;116;25.6;Pescados e frutos do mar
+287;Caranguejo, cozido;83;18.5;Pescados e frutos do mar
+296;Lambari, congelado, cru;131;16.8;Pescados e frutos do mar
+300;Manjuba, frita;349;30,1;Pescados e frutos do mar
+302;Merluza, filé, cru;89;16.6;Pescados e frutos do mar
+312;Pintado, cru;91;18.6;Pescados e frutos do mar
+316;Salmão, sem pele, fresco, cru;170;19.3;Pescados e frutos do mar
+321;Sardinha, inteira, crua;114;21.1;Pescados e frutos do mar
+326;Carne, bovina, acém, moído, cozido;212;26.7;Carnes e derivados
+338;Carne, bovina, charque, cozido;263;36.4;Carnes e derivados
+343;Carne, bovina, contra-filé, com gordura, cru;206;21.2;Carnes e derivados
+351;Carne, bovina, coxão mole, sem gordura, cozido;219;32.4;Carnes e derivados
+356;Carne, bovina, fígado, grelhado;225;29.9;Carnes e derivados
+377;Carne, bovina, patinho, sem gordura, grelhado;219;35.9;Carnes e derivados
+381;Carne, bovina, picanha, com gordura, grelhada;289;26.4;Carnes e derivados
+392;Frango, caipira, inteiro, com pele, cozido;243;23.9;Carnes e derivados
+397;Frango, coxa, com pele, crua;161;17.1;Carnes e derivados
+400;Frango, fígado, cru;106;17,6;Carnes e derivados
+401;Frango, filé, à milanesa;221;28.5;Carnes e derivados
+408;Frango, peito, sem pele, cozido;163;31.5;Carnes e derivados
+415;Hambúrguer, bovino, cru;215;13.2;Carnes e derivados
+422;Lingüiça, porco, frita;280;20.5;Carnes e derivados
+428;Porco, bisteca, frita;311;33.7;Carnes e derivados
+435;Porco, pernil, assado;262;32.1;Carnes e derivados
+438;Presunto, com capa de gordura;128;14.4;Carnes e derivados
+444;Toucinho, cru;593;11.5;Carnes e derivados
+446;Bebida láctea, pêssego;55;2.1;Leite e derivados
+448;logurte, natural;51;4.1;Leite e derivados
+451;Iogurte, sabor morango;70;2,7;Leite e derivados
+453;Leite, condensado;313;7.7;Leite e derivados
+458;Leite, de vaca, integral;61;3.2;Leite e derivados
+461;Queijo, minas, frescal;264;17.4;Leite e derivados
+463;Queijo, mozarela;330;22.6;Leite e derivados
+467;Queijo, prato;360;22.7;Leite e derivados
+469;Queijo, ricota;140;12.6;Leite e derivados
+472;Cana, aguardente¹;216;;Bebidas (alcoólicas e não alcoólicas)
+474;Cerveja, pilsen 2;41;0.6;Bebidas (alcoólicas e não alcoólicas)
+478;Coco, água de;22;0.0;Bebidas (alcoólicas e não alcoólicas)
+480;Refrigerante, tipo cola;34;0.0;Bebidas (alcoólicas e não alcoólicas)
+482;Refrigerante, tipo laranja;46;0.0;Bebidas (alcoólicas e não alcoólicas)
+485;Ovo, de codorna, inteiro, cru;177;13.7;Ovos e derivados
+486;Ovo, de galinha, clara, cozida/10minutos;59;13.4;Ovos e derivados
+488;Ovo, de galinha, inteiro, cozido/10minutos;146;13.3;Ovos e derivados
+489;Ovo, de galinha, inteiro, cru;143;13.0;Ovos e derivados
+490;Ovo, de galinha, inteiro, frito;240;15.6;Ovos e derivados
+526;Arroz carreteiro;154;10.8;Alimentos preparados
+531;Camarão à baiana;101;7.9;Alimentos preparados
+538;Estrogonofe de frango;157;17.6;Alimentos preparados
+540;Feijoada;117;8.7;Alimentos preparados
+543;Maniçoba;134;10.0;Alimentos preparados
+547;Salpicão, de frango;148;13.9;Alimentos preparados
+550;Tacacá;47;7;Alimentos preparados
+551;Tapioca, com manteiga;348;0.1;Alimentos preparados
+554;Vatapá;255;6.0;Alimentos preparados
+558;Amendoim, torrado, salgado;606;22.5;Leguminosas e derivados
+561;Feijão, carioca, cozido;76;4.8;Leguminosas e derivados
+567;Feijão, preto, cozido;77;4.5;Leguminosas e derivados
+575;Grão-de-bico, cru;355;21.2;Leguminosas e derivados
+584;Soja, queijo (tofu);64;6.6;Leguminosas e derivados
