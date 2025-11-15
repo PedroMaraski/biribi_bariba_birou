@@ -15,6 +15,30 @@ NodeCategoria *buscar_categoria(NodeCategoria *head, const char *nome) {
     return NULL;
 }
 
+NodeArvore* inserir_na_arvore(NodeArvore *raiz, float valor, NodeAlimento *alimento) {
+    if (raiz == NULL) {
+        NodeArvore* novo_no = (NodeArvore*) malloc(sizeof(NodeArvore));
+
+        if (novo_no == NULL) {
+            perror("Erro ao alocar memória para o nó da árvore.");
+            exit(1);
+        }
+        novo_no->valor = valor;
+        novo_no->alimento = alimento;
+        novo_no->esquerda = NULL;
+        novo_no->direita = NULL;
+
+        return novo_no;
+    }
+
+    if (valor < raiz->valor) {
+        raiz->esquerda = inserir_na_arvore(raiz->esquerda, valor, alimento);
+    } else {
+        raiz->direita = inserir_na_arvore(raiz->direita, valor, alimento);
+    }
+    return raiz;
+}
+
 // Insere categoria em ordem alfabética
 void inserir_categoria_ordenada(NodeCategoria **head, const char *nome) {
     NodeCategoria *nova_categoria =
@@ -24,6 +48,8 @@ void inserir_categoria_ordenada(NodeCategoria **head, const char *nome) {
 
     strcpy(nova_categoria->nome, nome);
     nova_categoria->alimentos = NULL;
+    nova_categoria->raiz_energia = NULL;
+    nova_categoria->raiz_proteina = NULL;
     nova_categoria->next = NULL;
 
     // Lista vazia ou inserir no início
@@ -57,10 +83,10 @@ NodeCategoria *buscar_ou_criar_categoria(NodeCategoria **head,
 }
 
 // Insere alimento em ordem alfabética dentro da categoria
-void inserir_alimento_ordenado(NodeCategoria *categoria, Alimento alimento) {
+NodeAlimento* inserir_alimento_ordenado(NodeCategoria *categoria, Alimento alimento) {
     NodeAlimento *novo_alimento = (NodeAlimento *)malloc(sizeof(NodeAlimento));
     if (novo_alimento == NULL)
-        return;
+        return NULL;
 
     novo_alimento->dados = alimento;
     novo_alimento->next = NULL;
@@ -70,7 +96,7 @@ void inserir_alimento_ordenado(NodeCategoria *categoria, Alimento alimento) {
         strcmp(alimento.descricao, categoria->alimentos->dados.descricao) < 0) {
         novo_alimento->next = categoria->alimentos;
         categoria->alimentos = novo_alimento;
-        return;
+        return novo_alimento;
     }
 
     // Procura posição correta em ordem alfabética
@@ -82,6 +108,8 @@ void inserir_alimento_ordenado(NodeCategoria *categoria, Alimento alimento) {
 
     novo_alimento->next = current->next;
     current->next = novo_alimento;
+
+    return novo_alimento;
 }
 
 // Função principal que lê o arquivo e popula tudo
@@ -101,7 +129,21 @@ NodeCategoria *ler_arquivo_e_popular(const char *filename) {
             buscar_ou_criar_categoria(&lista_categorias, alimento.categoria);
 
         if (categoria != NULL) {
-            inserir_alimento_ordenado(categoria, alimento);
+            NodeAlimento* novo_no_lista = inserir_alimento_ordenado(categoria, alimento);
+
+            if (novo_no_lista != NULL) {
+                categoria->raiz_energia = inserir_na_arvore(
+                    categoria->raiz_energia,
+                    novo_no_lista->dados.energia,
+                    novo_no_lista
+                );
+
+                categoria->raiz_proteina = inserir_na_arvore(
+                    categoria->raiz_proteina,
+                    novo_no_lista->dados.proteina,
+                    novo_no_lista
+                );
+            }
         }
     }
 
@@ -128,10 +170,24 @@ void imprimir_tudo(NodeCategoria *head) {
     }
 }
 
+void liberar_arvore(NodeArvore* raiz){
+    if (raiz == NULL) return;
+    NodeArvore* left_tree = raiz->esquerda;
+    NodeArvore* right_tree = raiz->direita;
+
+    liberar_arvore(left_tree);
+    liberar_arvore(right_tree);
+
+    free(raiz);
+}
+
 // Libera toda a memória
 void liberar_tudo(NodeCategoria *head) {
     while (head != NULL) {
         NodeCategoria *next_cat = head->next;
+
+        liberar_arvore(head->raiz_energia);
+        liberar_arvore(head->raiz_proteina);
 
         NodeAlimento *alim = head->alimentos;
         while (alim != NULL) {

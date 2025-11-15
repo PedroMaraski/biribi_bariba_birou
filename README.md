@@ -6,10 +6,10 @@
 
 ## P2
 - [x] Ler dados do arquivo BIN e armazenar em memória de forma dinâmica
-- [ ] Criar lista encadeada de categorias
-- [ ] Criar lista de alimentos dentro de cada categoria na lista de categorias em ordem alfabética
-- [ ] Árvore binária de energia dos alimentos da categoria
-- [ ] Árvore binária de proteína dos alimentos da categoria
+- [x] Criar lista encadeada de categorias
+- [x] Criar lista de alimentos dentro de cada categoria na lista de categorias em ordem alfabética
+- [x] Árvore binária de energia dos alimentos da categoria
+- [x] Árvore binária de proteína dos alimentos da categoria
 
 ## Interface do usuário
 Criar funções:
