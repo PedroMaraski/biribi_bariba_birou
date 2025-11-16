@@ -13,12 +13,12 @@
 void configurar_console(void) {
     #ifdef _WIN32
         // Configura UTF-8 para o console Windows
+        printf("windows\n");
         SetConsoleOutputCP(CP_UTF8);
-        SetConsoleCP(CP_UTF8);
     #else
         // Para sistemas Unix/Linux
         setlocale(LC_ALL, "pt_BR.UTF-8");
-#endif
+    #endif
 }
 
 TipoCategoria string_to_enum(const char *nomeString){
