@@ -1,6 +1,6 @@
-#define MAX_LINE_LENGTH 1024
+#ifndef MAIN_H
+#define MAIN_H
 
-// DEPOIS A GENTE VÊ O QUE VAI SER USADO
 typedef enum {
     ALIMENTOS_PREPARADOS,
     BEBIDAS,
@@ -50,3 +50,4 @@ typedef struct NodeCategoria {
     struct NodeCategoria *next;
 } NodeCategoria;
 
+#endif
