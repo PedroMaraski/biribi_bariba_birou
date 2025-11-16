@@ -19,8 +19,8 @@ Criar funções:
 - [x] 2. Liste todos os alimentos de certa categoria na ordem constante na lista de alimentos dessa categoria.
 - [x] 3. Liste todos os alimentos de certa categoria em ordem decrescente com respeito à energia (em Kcal) dos alimentos. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
 - [x] 4. Liste todos os alimentos de certa categoria em ordem decrescente com respeito à quantidade de proteína (em gramas) dos alimentos. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
-- [ ] 5. Liste todos os alimentos de certa categoria cuja energia esteja entre um valor mínimo e um valor máximo escolhidos pelo usuário. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
-- [ ] 6. Liste todos os alimentos de certa categoria cuja proteína esteja entre um valor mínimo e um valor máximo escolhidos pelo usuário. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
+- [x] 5. Liste todos os alimentos de certa categoria cuja energia esteja entre um valor mínimo e um valor máximo escolhidos pelo usuário. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
+- [x] 6. Liste todos os alimentos de certa categoria cuja proteína esteja entre um valor mínimo e um valor máximo escolhidos pelo usuário. (A implementação dessa operação deve utilizar a correspondente árvore binária de indexação.)
 - [ ] 7. Remova uma categoria de alimentos.
 - [x] 8. Remova um alimento específico. (Essa operação implica na atualização das árvores binárias de indexação da correspondente categoria. Essa atualização pode ser feita por meio da criação novas árvores.)
-- [ ] 9. Encerre o programa, fazendo com que uma versão atualizada do arquivo dados.bin seja gerada caso alguma categoria ou algum alimento tenha sido removido.
+- [x] 9. Encerre o programa, fazendo com que uma versão atualizada do arquivo dados.bin seja gerada caso alguma categoria ou algum alimento tenha sido removido.
