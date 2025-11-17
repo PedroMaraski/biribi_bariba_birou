@@ -4,7 +4,6 @@
 #include <windows.h>
 #endif
 
-
 int main() {
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
@@ -12,5 +11,5 @@ int main() {
 
     menu();
 
-    return 0; 
+    return 0;
 }
