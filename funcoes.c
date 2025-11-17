@@ -532,6 +532,54 @@ void listarProteinaIntervalo(NodeCategoria *categorias, TipoCategoria tipo,
     listarPorProteina(aux->raiz_proteina, min, max);
 }
 
+// Remove uma categória de alimentos.
+void removerCategoria(NodeCategoria **head, TipoCategoria tipo, bool *houveAlteracoes) {
+    if (head == NULL || *head == NULL) {
+        printf("Nenhuma categoria cadastrada.\n");
+        return;
+    }
+
+    NodeCategoria *atual = *head;
+    NodeCategoria *anterior = NULL;
+
+    // Procura a categoria correta
+    while (atual != NULL && atual->tipo != tipo) {
+        anterior = atual;
+        atual = atual->next;
+    }
+
+    if (atual == NULL) {
+        printf("Categoria nao encontrada.\n");
+        return;
+    }
+
+    // Remove do início da lista
+    if (anterior == NULL) {
+        *head = atual->next;
+    } else {
+        anterior->next = atual->next;
+    }
+
+    // Libera toda a lista de alimentos da categoria
+    NodeAlimento *a = atual->alimentos;
+    while (a != NULL) {
+        NodeAlimento *tmp = a->next;
+        free(a);
+        a = tmp;
+    }
+
+    // Libera árvores
+    liberar_arvore(atual->raiz_energia);
+    liberar_arvore(atual->raiz_proteina);
+
+    free(atual);
+
+    // Marca que os dados foram alterados
+    *houveAlteracoes = true;
+
+    printf("Categoria removida com sucesso!\n");
+}
+
 // Remove um alimento de uma categoria especificada pelo usuário
 // O alimento é passado pelo usuário por índice
 void removerAlimento(NodeCategoria *head, TipoCategoria tipo, int numero,
@@ -687,7 +735,7 @@ void menu() {
             puts("REMOVER CATEGORIA");
             TipoCategoria tipo = perguntarCategoriaValida();
 
-            // removerCategoria(&categorias, nome);
+            removerCategoria(&categorias, tipo, &houveAlteracoes);
         } break;
 
         case 8: {
