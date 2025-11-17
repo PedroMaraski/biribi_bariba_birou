@@ -34,7 +34,7 @@ void listarPorEnergia(NodeArvore *raiz, float min, float max);
 void listarEnergiaIntervalo(NodeCategoria *categorias, TipoCategoria nome, float min, float max);
 void listarPorProteina(NodeArvore *raiz, float min, float max);
 void listarProteinaIntervalo(NodeCategoria *categorias, TipoCategoria tipo, float min, float max);
-
+void removerCategoria(NodeCategoria **head, TipoCategoria tipo, bool *houveAlteracoes);
 void salvarDadosAtualizados(NodeCategoria *head, const char *filename);
 
 void menu();
