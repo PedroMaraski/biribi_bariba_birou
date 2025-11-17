@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 // Coloca os dados do arquivo .csv em um arquivo em binário
 void csv_to_bin(const char *csv_file, const char *bin_file) {
     char linha[MAX_LINE_LENGTH];

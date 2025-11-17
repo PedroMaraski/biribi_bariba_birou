@@ -17,10 +17,9 @@ typedef enum {
     PESCADOS_E_FRUTOS_DO_MAR,
     PRODUTOS_ACUCARADOS,
     VERDURAS_HORTALICAS_E_DERIVADOS,
-    
+
     CATEGORIA_INVALIDA
 } TipoCategoria;
-
 
 typedef struct {
     int numero;
@@ -30,12 +29,10 @@ typedef struct {
     float proteina;
 } Alimento;
 
-
 typedef struct NodeAlimento {
     Alimento dados;
     struct NodeAlimento *next;
 } NodeAlimento;
-
 
 typedef struct NodeArvore {
     float valor;
@@ -43,7 +40,6 @@ typedef struct NodeArvore {
     struct NodeArvore *direita;
     NodeAlimento *alimento;
 } NodeArvore;
-
 
 typedef struct NodeCategoria {
     TipoCategoria tipo;

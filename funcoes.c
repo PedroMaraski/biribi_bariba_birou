@@ -183,8 +183,8 @@ NodeAlimento *inserir_alimento_ordenado(NodeCategoria *categoria,
     return novo_alimento;
 }
 
-// Lê o arquivo .csv e coloca suas informações no arquivo dados.bin
-// de acordo com a estrutura dos dados definida.
+// Lê o arquivo binário e popula a lista ligada de categorias de alimentos em
+// ordem alfabética
 NodeCategoria *ler_arquivo_e_popular(const char *filename) {
     FILE *file = fopen(filename, "rb");
     if (file == NULL) {
